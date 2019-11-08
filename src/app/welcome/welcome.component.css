@@ -1,0 +1,72 @@
+.bg-opacity {
+  position: relative;
+  background-color: rgb(66, 66, 66);
+  height: 100vh;
+}
+
+.bg-opacity::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.2;
+  background: url("/assets/images/general.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.divImgWelcome {
+  text-align: center;
+  position: relative;
+}
+
+.imgWelcome {
+  width: 20%;
+  border-radius: 0px 0px 205px 205px;
+}
+
+.txtWelcome {
+  text-align: center;
+  margin-top: 5%;
+  color: #ffffff;
+  opacity: 1;
+  width: 100%;
+  font-size: 25px;
+}
+
+.btnContinue {
+  cursor: pointer;
+  color: white;
+  padding-top: 5%;
+}
+
+.separatorContainer {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  padding-left: 43%;
+}
+
+.separator {
+  width: 45px;
+  height: 8px;
+}
+
+.red {
+  background: #c34538 0% 0% no-repeat padding-box;
+}
+
+.yellow {
+  background: #d39c3b 0% 0% no-repeat padding-box;
+}
+
+.green {
+  background: #6f9e3c 0% 0% no-repeat padding-box;
+}
+
+.blue {
+  background: #4d88be 0% 0% no-repeat padding-box;
+}
