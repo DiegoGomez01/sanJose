@@ -1,4 +1,13 @@
 <div id="divBackground" class="divBackground">
     <app-navbar></app-navbar>
-    <button id="btnRojo" class="hidden-buttons" (mouseenter)="test()" (mouseleave)="defaultBackground()"></button>
+    <div id="btnRojo" class="hidden-buttons" (mouseenter)="showConversemos()" (mouseleave)="defaultBackground()"></div>
+    <div *ngIf="openConversemos">
+        <div class="componentForo">
+            <app-foro></app-foro>
+        </div>
+    </div>
+    <button id="btnNaranja" class="hidden-buttons" (mouseenter)="showQueProponemos()" (mouseleave)="defaultBackground()"></button>
+    <button id="btnAzul" class="hidden-buttons" (mouseenter)="showLoMejorDeMiBarrio()" (mouseleave)="defaultBackground()"></button>
+    <button id="btnVerde" class="hidden-buttons" (mouseenter)="showQuienesSomos()" (mouseleave)="defaultBackground()"></button>
+    <button id="btnRosa" class="hidden-buttons" (mouseenter)="showSanJose()" (mouseleave)="defaultBackground()"></button>
 </div>

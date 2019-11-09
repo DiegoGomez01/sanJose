@@ -25,3 +25,43 @@
   left: 26vw;
   background: none;
 }
+
+.componentForo {
+  left: 47vw;
+  width: 53vw;
+  height: 65vh;
+  top: 10vh;
+  position: relative;
+}
+
+#btnNaranja {
+  width: 11vw;
+  height: 48vh;
+  top: 50vh;
+  left: 2vw;
+  background: none;
+}
+
+#btnAzul {
+  width: 19vw;
+  height: 29vh;
+  top: 54vh;
+  left: 46vw;
+  background: none;
+}
+
+#btnVerde {
+  width: 17vw;
+  height: 25vh;
+  top: 53vh;
+  left: 27vw;
+  background: none;
+}
+
+#btnRosa {
+  width: 17vw;
+  height: 13vh;
+  top: 52vh;
+  right: 7.5vw;
+  background: none;
+}
