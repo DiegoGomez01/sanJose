@@ -12,4 +12,12 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  test() {
+    document.getElementById('divBackground').style.backgroundImage = 'url("/assets/images/conversemos.jpg")';
+  }
+
+  defaultBackground() {
+    document.getElementById('divBackground').style.backgroundImage = 'url("/assets/images/general.jpg")';
+  }
+
 }

@@ -1,0 +1,27 @@
+.divBackground {
+  background: url("/assets/images/general.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.menu {
+  position: absolute;
+}
+
+.divMenu {
+  text-align: right;
+}
+
+.hidden-buttons {
+  position: absolute;
+  padding: 0;
+  border: none;
+}
+
+#btnRojo {
+  width: 21vw;
+  height: 20vh;
+  top: 22vh;
+  left: 26vw;
+  background: none;
+}
