@@ -42,12 +42,28 @@
   background: none;
 }
 
+.componentPropondremos {
+  left: 22vw;
+  width: 53vw;
+  height: 35vh;
+  top: 31vh;
+  position: relative;
+}
+
 #btnAzul {
   width: 19vw;
   height: 29vh;
   top: 54vh;
   left: 46vw;
   background: none;
+}
+
+.componentBarrio {
+  width: 35vw;
+  height: 90vh;
+  top: 5vh;
+  left: 5vw;
+  position: relative;
 }
 
 #btnVerde {
@@ -58,10 +74,26 @@
   background: none;
 }
 
+.componentNosotros {
+  left: 44vw;
+  width: 56vw;
+  height: 55vh;
+  top: 16vh;
+  position: relative;
+}
+
 #btnRosa {
   width: 17vw;
   height: 13vh;
   top: 52vh;
   right: 7.5vw;
   background: none;
+}
+
+.componentSanJose {
+  left: 44.1vw;
+  width: 30vw;
+  height: 80vh;
+  top: 13vh;
+  position: relative;
 }

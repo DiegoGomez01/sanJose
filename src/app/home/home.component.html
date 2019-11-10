@@ -1,13 +1,39 @@
 <div id="divBackground" class="divBackground">
     <app-navbar></app-navbar>
-    <div id="btnRojo" class="hidden-buttons" (mouseenter)="showConversemos()" (mouseleave)="defaultBackground()"></div>
+    <div id="btnRojo" class="hidden-buttons" (mouseenter)="showConversemos()"
+        (mouseleave)="defaultBackground()"></div>
     <div *ngIf="openConversemos">
         <div class="componentForo">
             <app-foro></app-foro>
         </div>
     </div>
-    <button id="btnNaranja" class="hidden-buttons" (mouseenter)="showQueProponemos()" (mouseleave)="defaultBackground()"></button>
-    <button id="btnAzul" class="hidden-buttons" (mouseenter)="showLoMejorDeMiBarrio()" (mouseleave)="defaultBackground()"></button>
-    <button id="btnVerde" class="hidden-buttons" (mouseenter)="showQuienesSomos()" (mouseleave)="defaultBackground()"></button>
-    <button id="btnRosa" class="hidden-buttons" (mouseenter)="showSanJose()" (mouseleave)="defaultBackground()"></button>
+    <button id="btnNaranja" class="hidden-buttons"
+        (mouseenter)="showQueProponemos()" (mouseleave)="defaultBackground()"></button>
+    <div *ngIf="openPropondremos">
+        <div class="componentPropondremos">
+            <app-propose></app-propose>
+        </div>
+    </div>
+    <button id="btnAzul" class="hidden-buttons"
+        (mouseenter)="showLoMejorDeMiBarrio()"
+        (mouseleave)="defaultBackground()"></button>
+    <div *ngIf="openBarrio">
+        <div class="componentBarrio">
+            <app-neighborhood></app-neighborhood>
+        </div>
+    </div>
+    <button id="btnVerde" class="hidden-buttons"
+        (mouseenter)="showQuienesSomos()" (mouseleave)="defaultBackground()"></button>
+    <div *ngIf="openNosotros">
+        <div class="componentNosotros">
+            <app-about-us></app-about-us>
+        </div>
+    </div>
+    <button id="btnRosa" class="hidden-buttons" (mouseenter)="showSanJose()"
+        (mouseleave)="defaultBackground()"></button>
+    <div *ngIf="openSanJose">
+        <div class="componentSanJose">
+            <app-san-jose></app-san-jose>
+        </div>
+    </div>
 </div>

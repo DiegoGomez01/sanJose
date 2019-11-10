@@ -8,6 +8,10 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ForoComponent } from './foro/foro.component';
+import { ProposeComponent } from './propose/propose.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { SanJoseComponent } from './san-jose/san-jose.component';
+import { NeighborhoodComponent } from './neighborhood/neighborhood.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { ForoComponent } from './foro/foro.component';
     HomeComponent,
     PageNotFoundComponent,
     NavbarComponent,
-    ForoComponent
+    ForoComponent,
+    ProposeComponent,
+    AboutUsComponent,
+    SanJoseComponent,
+    NeighborhoodComponent
   ],
   imports: [
     BrowserModule,
