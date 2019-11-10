@@ -44,7 +44,7 @@
 
 .componentPropondremos {
   left: 22vw;
-  width: 53vw;
+  width: 70vw;
   height: 35vh;
   top: 31vh;
   position: relative;
@@ -91,9 +91,8 @@
 }
 
 .componentSanJose {
-  left: 44.1vw;
+  left: 45vw;
   width: 30vw;
-  height: 80vh;
-  top: 13vh;
+  top: 12vh;
   position: relative;
 }
