@@ -20,27 +20,27 @@ export class HomeComponent implements OnInit {
 
   showConversemos() {
     this.openConversemos = true;
-    document.getElementById('divBackground').style.backgroundImage = 'url("/SanJose/assets/images/conversemos.jpg")';
+    document.getElementById('divBackground').style.backgroundImage = 'url("/sanJose/assets/images/conversemos.jpg")';
   }
 
   showLoMejorDeMiBarrio() {
     this.openBarrio = true;
-    document.getElementById('divBackground').style.backgroundImage = 'url("/SanJose/assets/images/loMejorDeMiBarrio.jpg")';
+    document.getElementById('divBackground').style.backgroundImage = 'url("/sanJose/assets/images/loMejorDeMiBarrio.jpg")';
   }
 
   showQueProponemos() {
     this.openPropondremos = true;
-    document.getElementById('divBackground').style.backgroundImage = 'url("/SanJose/assets/images/queProponemos.jpg")';
+    document.getElementById('divBackground').style.backgroundImage = 'url("/sanJose/assets/images/queProponemos.jpg")';
   }
 
   showQuienesSomos() {
     this.openNosotros = true;
-    document.getElementById('divBackground').style.backgroundImage = 'url("/SanJose/assets/images/quienesSomos.jpg")';
+    document.getElementById('divBackground').style.backgroundImage = 'url("/sanJose/assets/images/quienesSomos.jpg")';
   }
 
   showSanJose() {
     this.openSanJose = true;
-    document.getElementById('divBackground').style.backgroundImage = 'url("/SanJose/assets/images/sanJoseInteligente.jpg")';
+    document.getElementById('divBackground').style.backgroundImage = 'url("/sanJose/assets/images/sanJoseInteligente.jpg")';
   }
 
   defaultBackground() {
@@ -49,7 +49,7 @@ export class HomeComponent implements OnInit {
     this.openConversemos = false;
     this.openSanJose = false;
     this.openPropondremos = false;
-    document.getElementById('divBackground').style.backgroundImage = 'url("/SanJose/assets/images/general.jpg")';
+    document.getElementById('divBackground').style.backgroundImage = 'url("/sanJose/assets/images/general.jpg")';
   }
 
 }
