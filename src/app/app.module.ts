@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
-import { NgxGalleryModule } from 'ngx-gallery';
+import { GalleryModule } from  '@ngx-gallery/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,7 +32,8 @@ import { NeighborhoodComponent } from './neighborhood/neighborhood.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxGalleryModule
+    GalleryModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

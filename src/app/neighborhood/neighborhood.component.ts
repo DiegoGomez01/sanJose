@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
-import 'hammerjs';
+import { Gallery, GalleryItem, ImageItem } from '@ngx-gallery/core';
 
 @Component({
   selector: 'app-neighborhood',
@@ -8,30 +7,18 @@ import 'hammerjs';
   styleUrls: ['./neighborhood.component.css']
 })
 export class NeighborhoodComponent implements OnInit {
-  galleryOptions: NgxGalleryOptions[];
-  galleryImages: NgxGalleryImage[];
+  galleryId = 'myLightbox';
+  images: GalleryItem[];
 
-  constructor() { }
+  constructor(public gallery: Gallery) { }
 
   ngOnInit() {
-    this.galleryOptions = [
-      { "imageAutoPlay": true, "imageAutoPlayPauseOnHover": true, "previewAutoPlay": true, "previewAutoPlayPauseOnHover": true },
-      { "breakpoint": 500, "width": "300px", "height": "300px", "thumbnailsColumns": 3 },
-      { "breakpoint": 300, "width": "100%", "height": "200px", "thumbnailsColumns": 2 }
+    this.images = [
+      new ImageItem({ src: '../../assets/images/aboutUs.png', thumb: '../../assets/images/aboutUs.png' }),
+      new ImageItem({ src: '../../assets/images/general.jpg', thumb: '../../assets/images/general.jpg' }),
     ];
-
-    this.galleryImages = [
-      {
-        small: 'assets/aboutUs.png',
-        medium: 'assets/aboutUs.png',
-        big: 'assets/aboutUs.png'
-      },
-      {
-        small: 'assets/general.jpg',
-        medium: 'assets/general.jpg',
-        big: 'assets/general.jpg'
-      }
-    ];
+    const galleryRef = this.gallery.ref(this.galleryId);
+    galleryRef.load(this.images);
   }
 
 }
