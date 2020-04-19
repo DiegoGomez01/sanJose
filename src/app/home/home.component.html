@@ -1,39 +1,53 @@
 <div id="divBackground" class="divBackground">
-    <app-navbar></app-navbar>
-    <div id="btnRojo" class="hidden-buttons" (mouseenter)="showConversemos()"
-        (mouseleave)="defaultBackground()"></div>
-    <div *ngIf="openConversemos">
-        <div class="componentForo">
-            <app-foro></app-foro>
-        </div>
+  <app-navbar></app-navbar>
+  <div
+    id="btnRojo"
+    class="hidden-buttons"
+    (mouseenter)="showConversemos()"
+  ></div>
+  <div *ngIf="openConversemos" (mouseleave)="defaultBackground()">
+    <div class="componentForo">
+      <app-foro (mouseenter)="showConversemos()"></app-foro>
     </div>
-    <button id="btnNaranja" class="hidden-buttons"
-        (mouseenter)="showQueProponemos()" (mouseleave)="defaultBackground()"></button>
-    <div *ngIf="openPropondremos">
-        <div class="componentPropondremos">
-            <app-propose></app-propose>
-        </div>
+  </div>
+  <button
+    id="btnNaranja"
+    class="hidden-buttons"
+    (mouseenter)="showQueProponemos()"
+  ></button>
+  <div *ngIf="openPropondremos" (mouseleave)="defaultBackground()">
+    <div class="componentPropondremos">
+      <app-propose></app-propose>
     </div>
-    <button id="btnAzul" class="hidden-buttons"
-        (mouseenter)="showLoMejorDeMiBarrio()"
-        (mouseleave)="defaultBackground()"></button>
-    <div *ngIf="openBarrio">
-        <div class="componentBarrio">
-            <app-neighborhood></app-neighborhood>
-        </div>
+  </div>
+  <button
+    id="btnAzul"
+    class="hidden-buttons"
+    (mouseenter)="showLoMejorDeMiBarrio()"
+  ></button>
+  <div *ngIf="openBarrio" (mouseleave)="defaultBackground()">
+    <div class="componentBarrio">
+      <app-neighborhood></app-neighborhood>
     </div>
-    <button id="btnVerde" class="hidden-buttons"
-        (mouseenter)="showQuienesSomos()" (mouseleave)="defaultBackground()"></button>
-    <div *ngIf="openNosotros">
-        <div class="componentNosotros">
-            <app-about-us></app-about-us>
-        </div>
+  </div>
+  <button
+    id="btnVerde"
+    class="hidden-buttons"
+    (mouseenter)="showQuienesSomos()"
+  ></button>
+  <div *ngIf="openNosotros" (mouseleave)="defaultBackground()">
+    <div class="componentNosotros">
+      <app-about-us></app-about-us>
     </div>
-    <button id="btnRosa" class="hidden-buttons" (mouseenter)="showSanJose()"
-        (mouseleave)="defaultBackground()"></button>
-    <div *ngIf="openSanJose">
-        <div class="componentSanJose">
-            <app-san-jose></app-san-jose>
-        </div>
+  </div>
+  <button
+    id="btnRosa"
+    class="hidden-buttons"
+    (mouseenter)="showSanJose()"
+  ></button>
+  <div *ngIf="openSanJose" (mouseleave)="defaultBackground()">
+    <div class="componentSanJose">
+      <app-san-jose></app-san-jose>
     </div>
+  </div>
 </div>

@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { NgxGalleryModule } from 'ngx-gallery';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -28,7 +30,8 @@ import { NeighborhoodComponent } from './neighborhood/neighborhood.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
