@@ -1,0 +1,82 @@
+.red {
+    color: #C34538;
+}
+
+.topRed {
+    background-color: #C34538;
+}
+
+.heightScroll {
+    height: 17.7vh;
+}
+
+.content {
+    padding: 5%;
+}
+
+hr.divider {
+    border-top: 1px solid #bbb;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+}
+
+.selectDate {
+    border-color: #C34538;
+    background-color: white;
+    color: #C34538;
+    margin-right: 10px;
+    width: 180px;
+}
+
+.btnAddCommentary {
+    width: 180px;
+    background-color: #C34538;
+    color: white;
+    border-radius: 5px;
+}
+
+.commentary {
+    margin-bottom: 30px;
+}
+
+.imgUser {
+    height: 50px;
+    width: 50px;
+    float: left;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.reply {
+    color: #C34538;
+    font-size: 12px;
+    font-weight: bold;
+    float: right;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.nameUser{
+    display: inline;
+    font-weight: bold;
+    font-size: 12px;
+    color: #4D4D4D;
+    margin: 0px 0px 0px 20px;
+    margin-right: 15px;
+}
+
+.dateCommentary {
+    font-size: 12px;
+    color: #4D4D4D;
+    font-style: italic;
+}
+
+.textCommentary {
+    font-size: 12px;
+    color: #4D4D4D;
+    margin: 6px 0px 0px 70px;
+}
