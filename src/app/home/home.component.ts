@@ -21,31 +21,31 @@ export class HomeComponent implements OnInit {
   showConversemos(e = null) {
     this.defaultBackground();
     this.openConversemos = true;
-    document.getElementById('divBackground').style.backgroundImage = 'url("/assets/images/conversemos.jpg")';
+    document.getElementById('divBackground').style.backgroundImage = 'url("/sanJose/assets/images/conversemos.jpg")';
   }
 
   showLoMejorDeMiBarrio(e = null) {
     this.defaultBackground();
     this.openBarrio = true;
-    document.getElementById('divBackground').style.backgroundImage = 'url("/assets/images/loMejorDeMiBarrio.jpg")';
+    document.getElementById('divBackground').style.backgroundImage = 'url("/sanJose/assets/images/loMejorDeMiBarrio.jpg")';
   }
 
   showQueProponemos(e = null) {
     this.defaultBackground();
     this.openPropondremos = true;
-    document.getElementById('divBackground').style.backgroundImage = 'url("/assets/images/queProponemos.jpg")';
+    document.getElementById('divBackground').style.backgroundImage = 'url("/sanJose/assets/images/queProponemos.jpg")';
   }
 
   showQuienesSomos(e = null) {
     this.defaultBackground();
     this.openNosotros = true;
-    document.getElementById('divBackground').style.backgroundImage = 'url("/assets/images/quienesSomos.jpg")';
+    document.getElementById('divBackground').style.backgroundImage = 'url("/sanJose/assets/images/quienesSomos.jpg")';
   }
 
   showSanJose(e = null) {
     this.defaultBackground();
     this.openSanJose = true;
-    document.getElementById('divBackground').style.backgroundImage = 'url("/assets/images/sanJoseInteligente.jpg")';
+    document.getElementById('divBackground').style.backgroundImage = 'url("/sanJose/assets/images/sanJoseInteligente.jpg")';
   }
 
   defaultBackground() {
@@ -54,7 +54,7 @@ export class HomeComponent implements OnInit {
     this.openConversemos = false;
     this.openSanJose = false;
     this.openPropondremos = false;
-    document.getElementById('divBackground').style.backgroundImage = 'url("/assets/images/general.jpg")';
+    document.getElementById('divBackground').style.backgroundImage = 'url("/sanJose/assets/images/general.jpg")';
   }
 
 }

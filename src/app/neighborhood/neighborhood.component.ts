@@ -14,8 +14,8 @@ export class NeighborhoodComponent implements OnInit {
 
   ngOnInit() {
     this.images = [
-      new ImageItem({ src: '../../assets/images/aboutUs.png', thumb: '../../assets/images/aboutUs.png' }),
-      new ImageItem({ src: '../../assets/images/general.jpg', thumb: '../../assets/images/general.jpg' }),
+      new ImageItem({ src: '/sanJose/assets/images/aboutUs.png', thumb: '/sanJose/assets/images/aboutUs.png' }),
+      new ImageItem({ src: '/sanJose/assets/images/general.jpg', thumb: '/sanJose/assets/images/general.jpg' }),
     ];
     const galleryRef = this.gallery.ref(this.galleryId);
     galleryRef.load(this.images);
