@@ -39,8 +39,20 @@ hr.divider {
     border-radius: 5px;
 }
 
+.Back{
+    color: #C34538;
+    cursor: pointer;
+}
+
+.txtAddCommentary {
+    float: right;
+    color: #C34538;
+    cursor: default;
+}
+
 .commentary {
     margin-bottom: 30px;
+    color: #C34538;
 }
 
 .imgUser {
@@ -56,7 +68,6 @@ hr.divider {
     font-size: 12px;
     font-weight: bold;
     float: right;
-    justify-content: flex-end;
     cursor: pointer;
 }
 
@@ -79,4 +90,15 @@ hr.divider {
     font-size: 12px;
     color: #4D4D4D;
     margin: 6px 0px 0px 70px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.btnSend {
+    width: 90%;
+    background-color: #C34538;
+    color: white;
 }

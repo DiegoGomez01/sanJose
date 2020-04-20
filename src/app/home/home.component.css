@@ -27,10 +27,10 @@
 }
 
 .componentForo {
-  left: 47vw;
+  left: 21vw;
   width: 50vw;
   height: 65vh;
-  top: 10vh;
+  top: 7vh;
   position: relative;
 }
 
@@ -38,7 +38,6 @@
   width: 11vw;
   height: 48vh;
   top: 50vh;
-  left: 2vw;
   background: none;
 }
 
@@ -46,7 +45,6 @@
   left: 22vw;
   width: 70vw;
   height: 35vh;
-  top: 31vh;
   position: relative;
 }
 
@@ -61,8 +59,7 @@
 .componentBarrio {
   width: 35vw;
   height: 90vh;
-  top: 40vh;
-  left: 5vw;
+  left: -41vw;
   position: relative;
 }
 
@@ -75,10 +72,10 @@
 }
 
 .componentNosotros {
-  left: 44vw;
+  left: 17vw;
   width: 50vw;
+  top: -15vh;
   height: 55vh;
-  top: 16vh;
   position: relative;
 }
 
@@ -91,8 +88,8 @@
 }
 
 .componentSanJose {
-  left: 45vw;
+  left: -30vw;
   width: 30vw;
-  top: 12vh;
+  top: -18vh;
   position: relative;
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-foro',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForoComponent implements OnInit {
 
-  commentaries=[{
+  modeList = true;
+  foroForm: FormGroup;
+  submitted = false;
+  loading = false;
+
+  commentaries = [{
     id: 1,
     image: '../../assets/images/general.jpg',
     name: 'Juan Camilo Forero',
@@ -29,9 +35,36 @@ export class ForoComponent implements OnInit {
     text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
   }];
 
-  constructor() { }
+  constructor(
+    private formBuilder: FormBuilder,
+  ) { }
 
   ngOnInit() {
+    this.foroForm = this.formBuilder.group({
+      name: ['', [Validators.required]],
+      commentary: ['', [Validators.required, Validators.maxLength(255)]],
+      image: ['', []]
+    });
+  }
+
+  get f() { return this.foroForm.controls; }
+
+  onSubmit() {
+    this.submitted = true;
+    console.log(this.foroForm.controls);
+    if (this.foroForm.invalid) {
+      return;
+    }
+
+    alert('enviar Datos');
+  }
+
+  showForm() {
+    this.modeList = false;
+  }
+
+  showList() {
+    this.modeList = true;
   }
 
 }

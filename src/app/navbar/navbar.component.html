@@ -4,29 +4,21 @@
             <a class="navbar-brand" href="/">
                 <img src="../../assets/images/logoSimbolo.png" style="width:70%">
             </a>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarToggler" aria-controls="navbarTogglerDemo02"
-                aria-expanded="false" aria-label="Toggle navigation"
-                (click)="sidebarToggle()">
-                <span class="navbar-toggler-bar bar1"></span>
-                <span class="navbar-toggler-bar bar2"></span>
-                <span class="navbar-toggler-bar bar3"></span>
-            </button> -->
         </div>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link cursorStyle">
+                    <a class="nav-link cursorStyle" (click)="openQueProponemos()">
                         <p class="textMenuBar">Nosotros</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cursorStyle">
+                    <a class="nav-link cursorStyle" (click)="openQuienesSomos()">
                         <p class="textMenuBar">Equipo</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cursorStyle">
+                    <a class="nav-link cursorStyle" (click)="openSanJose()">
                         <p class="textMenuBar">Registro</p>
                     </a>
                 </li>

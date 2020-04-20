@@ -18,27 +18,32 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  showConversemos() {
+  showConversemos(e = null) {
+    this.defaultBackground();
     this.openConversemos = true;
     document.getElementById('divBackground').style.backgroundImage = 'url("/assets/images/conversemos.jpg")';
   }
 
-  showLoMejorDeMiBarrio() {
+  showLoMejorDeMiBarrio(e = null) {
+    this.defaultBackground();
     this.openBarrio = true;
     document.getElementById('divBackground').style.backgroundImage = 'url("/assets/images/loMejorDeMiBarrio.jpg")';
   }
 
-  showQueProponemos() {
+  showQueProponemos(e = null) {
+    this.defaultBackground();
     this.openPropondremos = true;
     document.getElementById('divBackground').style.backgroundImage = 'url("/assets/images/queProponemos.jpg")';
   }
 
-  showQuienesSomos() {
+  showQuienesSomos(e = null) {
+    this.defaultBackground();
     this.openNosotros = true;
     document.getElementById('divBackground').style.backgroundImage = 'url("/assets/images/quienesSomos.jpg")';
   }
 
-  showSanJose() {
+  showSanJose(e = null) {
+    this.defaultBackground();
     this.openSanJose = true;
     document.getElementById('divBackground').style.backgroundImage = 'url("/assets/images/sanJoseInteligente.jpg")';
   }
