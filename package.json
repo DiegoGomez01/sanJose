@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "lite": "lite-server",
-    "postinstall": "ng build --prod"
+    "build-prod": "ng build --prod --base-href http://ingenieria.ucaldas.edu.co/transmedia/sanJose/dist/sanJose/"
   },
   "private": true,
   "dependencies": {
