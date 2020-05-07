@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    document.getElementById('divBackground').style.background = 'url("assets/images/general.jpg") no-repeat center center';
+    document.getElementById('divBackground').style.background = 'url("assets/images/general.jpg") no-repeat';
   }
 
   showConversemos(e = null) {

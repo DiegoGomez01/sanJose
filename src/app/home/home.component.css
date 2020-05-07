@@ -1,6 +1,6 @@
 .divBackground {
-  background-size: cover;
   height: 100vh;
+  background-size: 100% 100vh !important;
 }
 
 .menu {
@@ -27,10 +27,11 @@
 
 .componentForo {
   left: 21vw;
-  width: 50vw;
-  height: 65vh;
+  width: 40vw;
+  height: 60vh;
   top: 7vh;
   position: relative;
+  z-index: 1;
 }
 
 #btnNaranja {
@@ -42,24 +43,26 @@
 
 .componentPropondremos {
   left: 22vw;
-  width: 70vw;
-  height: 35vh;
+  width: 50vw;
+  height: 50vh;
   position: relative;
+  z-index: 1;
 }
 
 #btnAzul {
   width: 19vw;
   height: 29vh;
   top: 54vh;
-  left: 46vw;
+  left: 44vw;
   background: none;
 }
 
 .componentBarrio {
-  width: 35vw;
-  height: 90vh;
-  left: -41vw;
+  width: 40vw;
+  height: 46vh;
+  left: -39vw;
   position: relative;
+  z-index: 1;
 }
 
 #btnVerde {
@@ -74,8 +77,9 @@
   left: 17vw;
   width: 50vw;
   top: -15vh;
-  height: 55vh;
+  height: 47vh;
   position: relative;
+  z-index: 1;
 }
 
 #btnRosa {
@@ -90,5 +94,7 @@
   left: -30vw;
   width: 30vw;
   top: -18vh;
+  height: 48vh;
   position: relative;
+  z-index: 1;
 }
